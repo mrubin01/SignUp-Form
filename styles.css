@@ -24,3 +24,9 @@
   justify-content: center;
   background-color: #fafafa;
 }
+
+.form-field {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
