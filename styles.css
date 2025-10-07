@@ -9,6 +9,10 @@
     height: 100vh;
 }
 
+.top-area {
+  display: 1;
+}
+
 .image-left {
   flex: 1;
   display: flex;
