@@ -1,3 +1,4 @@
+/* Basic reset */
 * {
   margin: 0;
   padding: 0;
@@ -5,11 +6,13 @@
   font-family: Arial, sans-serif;
 }
 
+/* Overall page layout */
 .container {
   display: flex;
-  height: 100vh; 
+  height: 100vh; /* full screen height */
 }
 
+/* Left side: full-height image */
 .image-left {
   flex: 1;
   position: relative;
@@ -18,9 +21,10 @@
 .image-left img {
   width: 100%;
   height: 100%;
-  object-fit: cover; 
+  object-fit: cover; /* makes image fill the column without distortion */
 }
 
+/* Right side: two stacked sections */
 .right-side {
   flex: 1;
   display: flex;
@@ -28,11 +32,12 @@
   background-color: #ffffff;
 }
 
+/* Paragraph area */
 .top-area {
   flex: 1;
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center; /* centers the text vertically */
   padding: 2rem;
   background-color: #f8f8f8;
   font-size: 1.1rem;
@@ -41,9 +46,10 @@
   text-align: center;
 }
 
+/* Form area */
 .side-form {
   flex: 1;
-  background-color: #eef2f7; 
+  background-color: #eef2f7; /* distinct background */
   padding: 2rem;
 }
 
@@ -53,8 +59,29 @@
   color: #222;
 }
 
+/* Two-column grid for input fields */
 .form-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
+}
+
+/* Inputs */
+.form-field label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: bold;
+  color: #444;
+}
+
+.form-field input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-field input:focus {
+  border-color: #007bff;
+  outline: none;
 }
