@@ -10,35 +10,26 @@
     flex-direction: row;
 }
 
+.image-left {
+  flex: 1;
+}
+
 .top-area, .side-form {
   flex: 1;
   display: flex;
   flex-direction: column;
 }
 
-.image-left {
-  flex: 1;
+.top-area {
+  order: -1;
+  padding: 1.5rem;
+  background-color: #f8f8f8;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 .side-form {
   background-color: #fafafa;
-}
-
-.form-field {
-  margin-bottom: 1rem;
-  display: flex;
-  flex-direction: column;
-}
-
-label {
-  margin-bottom: 0.5rem;
-  font-weight: bold;
-}
-
-input {
-  padding: 0.6rem;
-  font-size: 1rem;
-  border: 1px solid #ccc;
 }
 
 .form-grid {
