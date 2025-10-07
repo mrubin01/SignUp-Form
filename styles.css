@@ -5,35 +5,42 @@
 }
 
 .container {
-    display: flex;
-    height: 100vh;
-    flex-direction: row;
+  display: flex;
+  height: 100vh;
 }
 
+/* Left image area */
 .image-left {
   flex: 1;
 }
 
-.top-area, .side-form {
+/* Right side: stack .top-area above .side-form */
+.top-area,
+.side-form {
+  flex: 1;
+}
+
+.right-side {
   flex: 1;
   display: flex;
   flex-direction: column;
 }
 
+/* Visual tweaks */
 .top-area {
-  order: -1;
-  padding: 1.5rem;
   background-color: #f8f8f8;
+  padding: 1.5rem;
   font-size: 1rem;
   line-height: 1.5;
 }
 
 .side-form {
   background-color: #fafafa;
+  padding: 2rem;
 }
 
 .form-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.0rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
 }
