@@ -10,7 +10,7 @@
 }
 
 .top-area {
-  display: 1;
+  flex: 1;
 }
 
 .image-left {
