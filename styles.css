@@ -34,8 +34,8 @@ body, html {
 
 .middle-area {
   display: grid;
-  grid-template-columns: 1fr 2fr;   /* two columns */
-  grid-auto-rows: auto;             /* rows expand */
+  grid-template-columns: auto auto; /*  1fr 2fr;   two columns */
+  /* grid-auto-rows: auto;    */
   gap: 15px 20px;
   align-items: center;
   background-color: #fff;
