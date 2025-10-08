@@ -36,11 +36,19 @@ body, html {
   background-color: #fff;
   padding: 20px;
   flex: 1;
-}
-
-.middle-area form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+}
+
+.middle-area label {
+  margin-top: 10px;
+}
+
+.middle-area input {
+  margin-top: 5px;
+  padding: 10px;
+  font-size: 1em;
 }
 
 .bottom-area {
@@ -56,5 +64,8 @@ body, html {
   padding: 10px 20px;
   font-size: 1em;
   cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 4px;
 }
 
