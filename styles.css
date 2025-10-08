@@ -1,11 +1,13 @@
-.container {
+.flex-grid {
   display: flex;
   background-color: dodgerblue;
 }
 
-.container div {
+.flex-grid div {
   background-color: #f1f1f1;
   margin: 10px;
   padding: 20px;
   font-size: 24px;
+  flex: 1;
 }
+
