@@ -37,13 +37,14 @@ body, html {
   padding: 30px 40px;
   flex: 1;
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: repeat(2, auto);
+  grid-template-columns: 1fr 2fr; /* 2 columns */
+  grid-template-rows: repeat(2, auto); /* 2 rows */
   column-gap: 20px;
   row-gap: 15px;
   align-items: center;
   justify-items: start;
 }
+
 
 .middle-area label {
   text-align: right;
