@@ -39,19 +39,22 @@ body, html {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: repeat(2, auto);
-  gap: 15px 20px;
+  column-gap: 20px;
+  row-gap: 15px;
   align-items: center;
+  justify-items: start;
 }
 
 .middle-area label {
   text-align: right;
   font-weight: 600;
+  width: 100%;
 }
 
 .middle-area input {
+  width: 100%;
   padding: 10px;
   font-size: 1em;
-  width: 100%;
 }
 
 .bottom-area {
