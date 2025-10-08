@@ -33,16 +33,14 @@ body, html {
 }
 
 .middle-area {
+  display: grid;
+  grid-template-columns: 1fr 2fr;   /* two columns */
+  grid-auto-rows: auto;             /* rows expand */
+  gap: 15px 20px;
+  align-items: center;
   background-color: #fff;
   padding: 30px 40px;
   flex: 1;
-  display: grid;
-  grid-template-columns: 1fr 2fr; /* 2 columns */
-  grid-template-rows: repeat(2, auto); /* 2 rows */
-  column-gap: 20px;
-  row-gap: 15px;
-  align-items: center;
-  justify-items: start;
 }
 
 
