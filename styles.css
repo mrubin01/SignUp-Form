@@ -48,11 +48,27 @@ body, html {
   align-items: start;
 }
 
-.middle-area form > :nth-child(odd) {
+.middle-area form > :nth-child(1) {
   grid-column: 1;
 }
 
-.middle-area form > :nth-child(even) {
+.middle-area form > :nth-child(3) {
+  grid-column: 1;
+}
+
+.middle-area form > :nth-child(3) {
+  grid-column: 1;
+}
+
+.middle-area form > :nth-child(2) {
+  grid-column: 2;
+}
+
+.middle-area form > :nth-child(4) {
+  grid-column: 2;
+}
+
+.middle-area form > :nth-child(6) {
   grid-column: 2;
 }
 
