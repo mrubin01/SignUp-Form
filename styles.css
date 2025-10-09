@@ -48,6 +48,14 @@ body, html {
   align-items: start;
 }
 
+.middle-area form > :nth-child(odd) {
+  grid-column: 1;
+}
+
+.middle-area form > :nth-child(even) {
+  grid-column: 2;
+}
+
 .middle-area label {
   text-align: right;
   font-weight: 600;
