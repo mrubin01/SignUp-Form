@@ -1,55 +1,90 @@
+/* The page structure has four main areas: the image at the left hand-side, the other three areas 
+stacked at the right-hand side 
+
+body
+--container
+  --left-side
+  --right-side
+    --top-area
+    --middle-area
+      --form
+        --form-field
+        --form-field
+        --form-field
+        --form-field
+        --form-field
+        --form-field
+    --bottom-area
+
+*/
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: Arial, sans-serif;
 }
 
-body, html {
+html, body {
   height: 100%;
 }
 
 .container {
-  display: flex;
-  height: 100vh;
+  display: grid;
+  height: 100vh;                     
+  grid-template-columns: 1fr 1fr;    
+  grid-template-rows: 1fr 2fr auto;  
+  grid-template-areas:
+    "image top"
+    "image middle"
+    "image bottom";
+  gap: 0;
 }
 
+.left-side {
+  grid-area: image;
+  overflow: hidden;
+}
 .left-side img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover;   /* image fills the left column */
+  display: block;
 }
 
-.right-side {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  min-width: 320px;
+.right-side { 
+  grid-column: 2;
 }
 
 .top-area {
-  background-color: #f0f0f0;
-  padding: 20px;
-  flex: 1;
+  grid-area: top;
+  display: flex;
+  align-items: center;       
+  justify-content: center;   
+  text-align: center;
+  padding: 2rem;
+  background: #f7f7f7;
+  color: #222;
+  font-size: 1.05rem;
+  line-height: 1.5;
 }
 
 .middle-area {
-  flex: 1;
-  padding: 2rem 2.5rem;
+  grid-area: middle;
+  padding: 2rem;
   background: #ffffff;
-  display: block; /* container for the form */
-}
-
-.middle-area form {
-  display: grid;
-  grid-template-columns: 1fr 1fr; 
-  gap: 20px 40px; 
+  display: flex;
+  align-items: center;       
+  justify-content: center;    
 }
 
 .middle-area .signup-form {
+  width: 100%;
+  max-width: 720px;
   display: grid;
-  grid-template-columns: 1fr 1fr; /* two columns */
-  gap: 18px 28px;                 /* row-gap column-gap */
+  grid-template-columns: 1fr 1fr; /* two equal columns */
+  gap: 18px 28px;                 /* row-gap, column-gap */
+  align-items: start;
 }
 
 .form-field {
@@ -57,46 +92,38 @@ body, html {
   flex-direction: column;
 }
 
-.middle-area form > :nth-child(4n+1),
-.middle-area form > :nth-child(4n+2) {
-  grid-column: 1;
-}
-
-.middle-area form > :nth-child(4n+3),
-.middle-area form > :nth-child(4n+4) {
-  grid-column: 2;
-}
-
 .form-field label {
-  margin-bottom: 0.4rem;
+  margin-bottom: 6px;
   font-weight: 600;
+  color: #333;
   font-size: 0.95rem;
-  color: #444;
+  text-align: left;
 }
 
 .form-field input {
-  width: 100%;
-  padding: 0.6rem;
+  padding: 10px;
   font-size: 1rem;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 6px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .bottom-area {
-  background-color: #f0f0f0;
-  padding: 20px;
-  flex: 0.5;
+  grid-area: bottom;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  padding: 1.2rem;
+  background: #eef4fb;
 }
 
 .bottom-area button {
-  padding: 10px 20px;
-  font-size: 1em;
+  padding: 10px 18px;
+  font-size: 1rem;
+  background: #2f8f4a;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
   cursor: pointer;
-  background-color: #4CAF50;
-  color: white;
-  border-radius: 4px;
 }
-
