@@ -42,10 +42,13 @@ body, html {
 
 .middle-area form {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* two equal columns */
-  column-gap: 20px;
-  row-gap: 15px;
-  align-items: start;
+  grid-template-columns: 1fr 1fr; 
+  gap: 20px 40px; 
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
 }
 
 .middle-area form > :nth-child(4n+1),
@@ -58,15 +61,14 @@ body, html {
   grid-column: 2;
 }
 
-.middle-area label {
-  display: block;
-  text-align: right;  
+.form-field label {
   margin-bottom: 0.4rem;
   font-weight: 600;
   font-size: 0.95rem;
+  color: #444;
 }
 
-.middle-area input {
+.form-field input {
   width: 100%;
   padding: 0.6rem;
   font-size: 1rem;
