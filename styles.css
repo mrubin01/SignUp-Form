@@ -33,12 +33,8 @@ html, body {
   display: grid;
   height: 100vh;                     
   grid-template-columns: 1fr 1fr;    
-  grid-template-rows: 1fr 2fr auto;  
   grid-template-areas:
-    "image top"
-    "image middle"
-    "image bottom";
-  gap: 0;
+    "image right";                   
 }
 
 .left-side {
@@ -52,15 +48,17 @@ html, body {
   display: block;
 }
 
-.right-side { 
-  grid-column: 2;
+.right-side {
+  grid-area: right;
+  display: grid;
+  grid-template-rows: 1fr 2fr auto;  /* top, middle, bottom */
+  height: 100%;
 }
 
 .top-area {
-  grid-area: top;
   display: flex;
-  align-items: center;       
-  justify-content: center;   
+  align-items: center;
+  justify-content: center;
   text-align: center;
   padding: 2rem;
   background: #f7f7f7;
@@ -70,12 +68,11 @@ html, body {
 }
 
 .middle-area {
-  grid-area: middle;
   padding: 2rem;
   background: #ffffff;
   display: flex;
-  align-items: center;       
-  justify-content: center;    
+  align-items: center;
+  justify-content: center;
 }
 
 .middle-area .signup-form {
@@ -83,8 +80,7 @@ html, body {
   max-width: 720px;
   display: grid;
   grid-template-columns: 1fr 1fr; /* two equal columns */
-  gap: 18px 28px;                 /* row-gap, column-gap */
-  align-items: start;
+  gap: 18px 28px;
 }
 
 .form-field {
@@ -97,7 +93,6 @@ html, body {
   font-weight: 600;
   color: #333;
   font-size: 0.95rem;
-  text-align: left;
 }
 
 .form-field input {
@@ -106,11 +101,9 @@ html, body {
   border: 1px solid #ccc;
   border-radius: 6px;
   width: 100%;
-  box-sizing: border-box;
 }
 
 .bottom-area {
-  grid-area: bottom;
   display: flex;
   align-items: center;
   justify-content: center;
