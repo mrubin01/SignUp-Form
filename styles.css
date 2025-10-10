@@ -77,17 +77,27 @@ html, body {
 }
 
 .middle-area {
-  justify-content: flex-start;
+  display: flex;
   padding: 2rem;
   background: #ffffff;
-  display: flex;
   align-items: center;
   justify-content: left;
 }
 
-.middle-area .middle-text {
+.form-header {
   text-align: left;
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto 1.5rem auto; 
 }
+
+.form-header h2 {
+  font-size: 22px;
+  color: #222;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
 .middle-area .signup-form {
   width: 100%;
   max-width: 720px;
