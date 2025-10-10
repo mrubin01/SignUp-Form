@@ -81,9 +81,9 @@ html, body {
   justify-content: left;
   padding: 2rem;
   background: #ffffff;
-  align-items: center;
+  align-items: left;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .form-header {
