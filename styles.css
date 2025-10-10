@@ -52,7 +52,7 @@ html, body {
 .right-side {
   grid-area: right;
   display: grid;
-  grid-template-rows: 1fr 2fr auto;  /* top, middle, bottom */
+  grid-template-rows: 1fr 1fr 1fr; /* 1fr 2fr auto;   top, middle, bottom */
   height: 100%;
 }
 
