@@ -78,10 +78,12 @@ html, body {
 
 .middle-area {
   display: flex;
-  justify-content: flex-start;
+  justify-content: left;
   padding: 2rem;
   background: #ffffff;
   align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .form-header {
@@ -89,6 +91,7 @@ html, body {
   width: 100%;
   max-width: 720px;
   margin: 0 auto 1.5rem auto; 
+  text-align: left;
 }
 
 .form-header h2 {
