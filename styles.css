@@ -60,7 +60,7 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 2rem 3rem;
+  /* padding: 2rem 3rem; */
   background: #f7f7f7;
   color: #222;
 }
@@ -79,7 +79,7 @@ html, body {
 .middle-area {
   display: flex;
   justify-content: left;
-  padding: 2rem;
+  /* padding: 2rem; */
   background: #ffffff;
   align-items: left;
   flex-direction: column;
@@ -133,7 +133,7 @@ html, body {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 1.5rem 1.5rem 1rem 2rem;
+  /* padding: 1.5rem 1.5rem 1rem 2rem; */
   background: #eef4fb;
 }
 
@@ -145,4 +145,10 @@ html, body {
   border: none;
   border-radius: 6px;
   cursor: pointer;
+}
+
+.top-area,
+.middle-area,
+.bottom-area {
+  padding-left: 3rem;
 }
