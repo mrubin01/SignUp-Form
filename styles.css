@@ -79,7 +79,7 @@ html, body {
 .middle-area {
   display: flex;
   justify-content: left;
-  /* padding: 2rem; */
+  padding: 2rem;
   background: #ffffff;
   align-items: left;
   flex-direction: column;
