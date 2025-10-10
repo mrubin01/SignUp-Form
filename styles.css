@@ -68,6 +68,11 @@ html, body {
   line-height: 1.5;
 }
 
+.top-area h2 {
+  font-size: 12px;
+  justify-content: left;
+}
+
 .middle-area {
   padding: 2rem;
   background: #ffffff;
