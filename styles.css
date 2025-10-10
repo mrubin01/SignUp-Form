@@ -84,6 +84,9 @@ html, body {
   justify-content: left;
 }
 
+.middle-area .middle-text {
+  text-align: left;
+}
 .middle-area .signup-form {
   width: 100%;
   max-width: 720px;
