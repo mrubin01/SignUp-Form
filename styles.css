@@ -78,10 +78,10 @@ html, body {
 
 .middle-area {
   display: flex;
+  justify-content: flex-start;
   padding: 2rem;
   background: #ffffff;
   align-items: center;
-  justify-content: left;
 }
 
 .form-header {
