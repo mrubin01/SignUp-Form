@@ -72,8 +72,8 @@ html, body {
   padding: 2rem;
   background: #ffffff;
   display: flex;
-  align-items: left;
-  justify-content: center;
+  align-items: center;
+  justify-content: left;
 }
 
 .middle-area .signup-form {
