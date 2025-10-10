@@ -15,6 +15,9 @@ body
         --form-field
         --form-field
     --bottom-area
+      --content-wrapper
+        --submit button
+        --login-text
 
 */
 
@@ -137,7 +140,13 @@ html, body {
   background: #eef4fb;
 }
 
+.bottom-area .content-wrapper {
+  width: 100%;
+  max-width: 720px;
+}
+
 .bottom-area button {
+  display: inline-block;
   padding: 10px 18px;
   font-size: 1rem;
   background: #2f8f4a;
