@@ -71,6 +71,7 @@ html, body {
 .top-area p {
   font-size: 12px;
   justify-content: left;
+  flex-direction: column;
 }
 
 .middle-area {
