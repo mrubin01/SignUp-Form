@@ -83,7 +83,7 @@ html, body {
   background: #ffffff;
   align-items: center;
   flex-direction: column;
-  justify-content: left;
+  justify-content: flex-start;
 }
 
 .form-header {
