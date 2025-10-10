@@ -132,6 +132,14 @@ html, body {
   width: 100%;
 }
 
+input:invalid {
+  border-color: red;
+}
+
+input:valid {
+  border-color: green;
+}
+
 .bottom-area {
   display: flex;
   align-items: flex-start;
