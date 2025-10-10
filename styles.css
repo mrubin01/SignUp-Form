@@ -69,6 +69,7 @@ html, body {
   text-align: left;
   font-size: 18px;
   line-height: 1.6;
+  font-weight: bold;
 }
 
 .top-area .intro-text p + p {
